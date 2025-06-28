@@ -5,21 +5,21 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="bg-black shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-4 flex md:justify-between items-center  sm:content-center sm:flex-col align-middle gap-4">
+      <div className="container mx-auto px-6 py-4 flex flex-col justify-between items-center  content-center  align-middle gap-4">
         <Link href="/">
           <Image
             src={LogoImage}
             alt="Imperial Home Remodeling Logo"
-            className="h-16 w-22  cursor-pointer"
+            className=" md:flex h-16 w-22  cursor-pointer"
           />
         </Link>
         {/* <span className="sm:text-xl font-bold text-amber-600">
           Imperial Home Remodeling
         </span> */}
-        <nav className="hidden md:flex space-x-6 items-center">
+        <nav className="flex space-x-2 md:space-x-6 items-center gap-2">
           <a
             href="#home"
-            className="text-white hover:text-[#FFD700] transition"
+            className="hidden md:flex text-white hover:text-[#FFD700] transition"
           >
             Home
           </a>
@@ -42,11 +42,23 @@ export default function Header() {
             Contact
           </a>
           <a
+            href="https://www.facebook.com/profile.php?id=61577134175534"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#FFD700]"
+          >
+            <span className="material-icons align-middle text-xl">
+              facebook
+            </span>
+          </a>
+          <a
             href="https://www.instagram.com/imperialhomeremodeling25/"
             target="_blank"
             className="text-white hover:text-[#FFD700]"
           >
-            <span className="material-icons align-middle">photo_camera</span>
+            <span className="material-icons align-middle text-xl">
+              photo_camera
+            </span>
           </a>
         </nav>
       </div>

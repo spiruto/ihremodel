@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of internal or error pages (optional)
+Disallow: /500
+Disallow: /404
+
+# Sitemap (if generated)
+Sitemap: https://ihremodel.com/sitemap.xml

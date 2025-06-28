@@ -7,6 +7,7 @@ import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
 import WhatsappButton from "@/components/whatsapp-button/WhatsAppButton";
+import WhyChooseUs from "@/components/why-choose-us/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -15,31 +16,10 @@ export default function Home() {
       <Hero />
       <Services />
       <Projects />
+<WhyChooseUs/>
       <Contact />
       <Footer />
       <WhatsappButton />
-      <script
-        type="application/ld+json"
-        suppressHydrationWarning
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Imperial Home Remodeling",
-            image: "https://www.ihremodel.com/logo.webp",
-            telephone: "+12015460083",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "420 Godwin Ave",
-              addressLocality: "Midland Park",
-              addressRegion: "NJ",
-              postalCode: "07432",
-              addressCountry: "US",
-            },
-            url: "https://www.ihremodel.com",
-          }),
-        }}
-      />
     </>
   );
 }

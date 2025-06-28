@@ -43,7 +43,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-gray-50 p-8 rounded-xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
+              className="bg-gray-50 p-8 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition border py-20  border-gray-200"
             >
               <div className="flex justify-center mb-4">
                 <span className="material-icons text-amber-500 text-5xl">

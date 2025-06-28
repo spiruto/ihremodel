@@ -43,12 +43,16 @@ export async function POST(req: Request) {
               <td style="padding: 8px; font-weight: bold; color: #000;">Email:</td>
               <td style="padding: 8px;">${email}</td>
             </tr>
+
             ${
               phone
                 ? `
             <tr>
               <td style="padding: 8px; font-weight: bold; color: #000;">Phone:</td>
-              <td style="padding: 8px;">${phone}</td>
+              <td style="padding: 8px;">  <a href="tel:${phone
+                .trim()
+                .replaceAll("-", "")
+                .replaceAll(" ", "")}">${phone}</a></td>
             </tr>`
                 : ""
             }

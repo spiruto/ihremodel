@@ -22,11 +22,32 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="author" content="Imperial Home Remodeling" />
         <meta property="og:locale" content="en_US" />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Imperial Home Remodeling",
+              image: "https://www.ihremodel.com/logo.webp",
+              telephone: "+12015460083",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "420 Godwin Ave",
+                addressLocality: "Midland Park",
+                addressRegion: "NJ",
+                postalCode: "07432",
+                addressCountry: "US",
+              },
+              url: "https://www.ihremodel.com",
+            }),
+          }}
+        />
       </head>
       <body className="bg-gray-50 text-gray-800 font-[Poppins]">
         {children}
       </body>
-  
     </html>
   );
 }
