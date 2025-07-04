@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Projects />
-<WhyChooseUs/>
+      <WhyChooseUs />
       <Contact />
       <Footer />
       <WhatsappButton />

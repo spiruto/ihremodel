@@ -1,5 +1,14 @@
-// app/components/Services.tsx
 const services = [
+  {
+    icon: "construction",
+    title: "General Contracting",
+    desc: "Comprehensive project management for all types of home improvement projects.",
+  },
+  {
+    icon: "roofing",
+    title: "Roofing",
+    desc: "Reliable roofing installation and repairs using high-quality materials for lasting protection.",
+  },
   {
     icon: "kitchen",
     title: "Kitchen Remodeling",
@@ -9,16 +18,6 @@ const services = [
     icon: "bathtub",
     title: "Bathroom Renovations",
     desc: "Transform your bathroom into a spa-like retreat with our expert renovation services.",
-  },
-  {
-    icon: "home_work",
-    title: "Home Additions",
-    desc: "Expand your living space with seamless home additions tailored to your family's needs.",
-  },
-  {
-    icon: "construction",
-    title: "General Contracting",
-    desc: "Comprehensive project management for all types of home improvement projects.",
   },
   {
     icon: "carpenter",
@@ -43,7 +42,7 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-gray-50 p-8 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition border py-20  border-gray-200"
+              className="bg-gray-50 p-8 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition border py-20 border-gray-200"
             >
               <div className="flex justify-center mb-4">
                 <span className="material-icons text-amber-500 text-5xl">
