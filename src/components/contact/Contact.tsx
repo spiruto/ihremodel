@@ -3,6 +3,7 @@ import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Contact as ContactProps, initialValues, schema } from "./helpers";
 import { useState } from "react";
+import { fireEvent } from "@/config/mixpanel.config";
 
 export default function Contact() {
   const { control, handleSubmit, reset } = useForm<ContactProps>({
@@ -204,6 +205,8 @@ export default function Contact() {
                   ? "bg-green-500 hover:bg-green-600"
                   : "bg-amber-500 hover:bg-amber-600"
               }  text-white font-semibold py-3 px-10 rounded-lg shadow-lg text-lg`}
+                          onClick={()=>{fireEvent("Clicked Send Mail Button")}}
+
             >
               {isLoading ? "Sending information..." : "Send Message"}
             </button>

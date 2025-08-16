@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image";
 import LogoImage from "@/assets/images/logo.webp";
 import Link from "next/link";
+import { fireEvent } from "@/config/mixpanel.config";
 // app/components/Header.tsx
 export default function Header() {
   return (
@@ -26,18 +28,23 @@ export default function Header() {
           <a
             href="#services"
             className="text-white hover:text-[#FFD700] transition"
+            onClick={()=>{fireEvent("Clicked Services Button")}}
           >
             Services
           </a>
           <a
             href="#projects"
             className="text-white hover:text-[#FFD700] transition"
+            onClick={() => { fireEvent("Clicked Projects Button") }}
+
           >
             Projects
           </a>
           <a
             href="#contact"
             className="text-white hover:text-[#FFD700] transition"
+            onClick={() => { fireEvent("Clicked Contact Button") }}
+
           >
             Contact
           </a>
@@ -46,6 +53,8 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#FFD700]"
+            onClick={() => { fireEvent("Clicked Facebook Button") }}
+
           >
             <span className="material-icons align-middle text-xl">
               facebook
@@ -55,6 +64,8 @@ export default function Header() {
             href="https://www.instagram.com/imperialhomeremodeling25/"
             target="_blank"
             className="text-white hover:text-[#FFD700]"
+            onClick={() => { fireEvent("Clicked Instagram Button") }}
+
           >
             <span className="material-icons align-middle text-xl">
               photo_camera

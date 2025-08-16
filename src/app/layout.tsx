@@ -1,3 +1,4 @@
+import "../config"
 import "./globals.css";
 // app/layout.tsx
 export default function RootLayout({
@@ -5,6 +6,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       <head>

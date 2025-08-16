@@ -45,10 +45,27 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-2">Social Media</h4>
           <ul className="space-y-1 align-middle">
             <li>
-              <span className="material-icons">facebook</span>
+              <a
+                href="https://www.facebook.com/profile.php?id=61577134175534"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-[#FFD700]"
+              >
+                <span className="material-icons align-middle text-xl">
+                  facebook
+                </span>
+              </a>
             </li>
             <li>
-              <span className="material-icons">photo_camera</span>
+              <a
+                href="https://www.instagram.com/imperialhomeremodeling25/"
+                target="_blank"
+                className="text-white hover:text-[#FFD700]"
+              >
+                <span className="material-icons align-middle text-xl">
+                  photo_camera
+                </span>
+              </a>
             </li>
           </ul>
         </div>

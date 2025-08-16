@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image';
 import HeroImage from '@/assets/images/hero-img.jpg';
+import { fireEvent } from '@/config/mixpanel.config';
 
 export default function Hero() {
   return (
@@ -24,6 +26,8 @@ export default function Hero() {
         <a
           href="#contact"
           className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition text-lg"
+                                    onClick={()=>{fireEvent("Clicked Get Free Quote Button")}}
+
         >
           Get a Free Quote
         </a>
