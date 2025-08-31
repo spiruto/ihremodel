@@ -56,8 +56,8 @@ export async function POST(req: Request) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.NEXT_PUBLIC_MAIL_USER as string,
-      pass: process.env.NEXT_PUBLIC_MAIL_PASS as string
+      user: process.env.MAIL_USER as string,
+      pass: process.env.MAIL_PASS as string
     }
   });
 
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     // 1) Send internal notification to your team
     await transporter.sendMail({
       from: `"${fullName}" <${email}>`,
-      to: process.env.NEXT_PUBLIC_MAIL_USER as string,
+      to: process.env.MAIL_USER as string,
       subject: `${fullName} wants a quote for '${workType}'`,
       html: renderContactEmail({
         fullName,
@@ -95,9 +95,9 @@ export async function POST(req: Request) {
 
     // 2) Send confirmation to the customer
     await transporter.sendMail({
-      from: `"${brand}" <${process.env.NEXT_PUBLIC_MAIL_USER as string}>`,
+      from: `"${brand}" <${process.env.MAIL_USER as string}>`,
       to: email,
-      replyTo: process.env.NEXT_PUBLIC_MAIL_USER as string,
+      replyTo: process.env.MAIL_USER as string,
       subject: `We received your request — ${brand}`,
       html: renderCustomerConfirmEmail({
         fullName,
