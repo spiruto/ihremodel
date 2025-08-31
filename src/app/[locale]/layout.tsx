@@ -8,7 +8,7 @@ import Script from "next/script";
 
 // ---- Site config (edit as needed) ----
 const SITE_NAME = "Imperial Home Remodeling";
-const DEFAULT_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://iheremodel.com";
+const DEFAULT_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ihremodel.com";
 const DEFAULT_LOCALES = ["en", "es"] as const;
 const CONTACT = {
   phone: "+12015460083",
@@ -74,9 +74,9 @@ const icons = {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+    params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params
   if (!hasLocale(routing.locales, locale)) notFound();
 
   const copy = getLocaleCopy(locale);
@@ -90,9 +90,7 @@ export async function generateMetadata({
   // Canonical per locale (homepage pattern; subpages will inherit)
   const canonical = locale === routing.defaultLocale ? `${DEFAULT_URL}/` : `${DEFAULT_URL}/${locale}`;
 
-  const titleTemplate = locale === "es"
-    ? `%s | ${SITE_NAME}`
-    : `%s | ${SITE_NAME}`;
+  const titleTemplate = `%s | ${SITE_NAME}`;
 
   return {
     metadataBase,
@@ -126,7 +124,7 @@ export async function generateMetadata({
       siteName: SITE_NAME,
       images: [
         {
-          url: "/og/og-default.jpg", // add this asset
+          url: "/og/og-default.jpg",
           width: 1200,
           height: 630,
           alt: SITE_NAME,
@@ -161,15 +159,13 @@ export async function generateMetadata({
     category: "home_improvement",
   };
 }
-
-// Root layout (keeps Crisp + adds JSON-LD)
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
-
-export default function RootLayout({ children, params }: Props) {
-  const { locale } = params;
+// Root layout (keeps Crisp + adds JSON-LD)
+export default async function RootLayout({ children, params }: Props) {
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
   // ---- JSON-LD (Organization + WebSite) ----
@@ -211,7 +207,7 @@ export default function RootLayout({ children, params }: Props) {
     priceRange: "$$",
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "09:00", closes: "14:00" }
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "09:00", closes: "14:00" },
     ],
   };
 
