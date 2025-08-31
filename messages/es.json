@@ -1,0 +1,713 @@
+{
+  "Common": {
+    "brand": "Imperial Home Remodeling",
+    "skipToContent": "Saltar al contenido",
+    "cta": {
+      "primary": "Cotizar gratis",
+      "secondary": "Ver nuestros trabajos",
+      "consultation": "Obtén una consulta gratuita",
+      "financing": "Explorar financiamiento",
+      "startProject": "Comienza tu proyecto",
+      "getQuoteShort": "Cotizar",
+      "chat": "Chatea con nosotros"
+    },
+    "aria": {
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "home": "Inicio de Imperial Home Remodeling"
+    }
+  },
+  "Meta": {
+    "title": "Mejoras y Remodelación del Hogar | Cocinas, Baños, Techos, Ventanas | Imperial Home Remodeling",
+    "description": "Remodeladores con licencia para cocinas, baños, techos, ventanas y revestimiento. Cotizaciones gratis. Atendemos California, Nueva York, Nueva Jersey, Connecticut y Pensilvania. Trabajo de calidad, instalaciones rápidas y excelentes reseñas.",
+    "ogTitle": "Imperial Home Remodeling — Expertos en Remodelación",
+    "ogDescription": "Remodelación de cocinas y baños, techos, ventanas y revestimiento. Cotizaciones gratis. Atendemos NJ y PA."
+  },
+  "Header": {
+    "links": {
+      "services": "Servicios",
+      "whyUs": "Por qué elegirnos",
+      "process": "Proceso",
+      "projects": "Proyectos",
+      "financing": "Financiamiento",
+      "reviews": "Reseñas",
+      "contact": "Contacto"
+    },
+    "badgeRowTitle": "De confianza y recomendados",
+    "badges": [
+      "BBB A+",
+      "Angi Super Service",
+      "4.9★ Google",
+      "Con licencia y asegurados",
+      "Garantías"
+    ]
+  },
+  "Hero": {
+    "heading": "Transforma tu hogar con confianza",
+    "subheading": "Cocinas y baños, techos, ventanas y revestimiento — mano de obra de calidad y comunicación clara. Atendemos {states}.",
+    "states": "NJ y PA",
+    "ctaPrimary": "{ctaConsultation}",
+    "ctaSecondary": "{ctaSecondary}"
+  },
+  "Services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Del concepto a la finalización, entregamos resultados duraderos y hermosos que encantan a los propietarios.",
+    "cards": [
+      {
+        "title": "Kitchen Remodeling",
+        "desc": "Gabinetes a medida, superficies duraderas y distribuciones eficientes — pensadas para la vida diaria y para recibir visitas.",
+        "cta": "Solicita cotización de cocina →",
+        "img": "/services/kitchen-remodel.jpg"
+      },
+      {
+        "title": "Bathroom Remodeling",
+        "desc": "Duchas tipo spa, mosaicos destacados y diseños accesibles. Opciones de renovación en un día.",
+        "cta": "Solicita cotización de baño →",
+        "img": "/services/bathroom-remodel.jpg"
+      },
+      {
+        "title": "Windows & Doors",
+        "desc": "Reemplazos de alta eficiencia instalados por expertos. Invierno más cálido, verano más fresco y menores facturas.",
+        "cta": "Solicita cotización de ventanas →",
+        "img": "/services/windows-and-doors-remodel.jpg"
+      },
+      {
+        "title": "Roofing",
+        "desc": "Materiales de alto rendimiento, instalaciones limpias y fuertes garantías — protección por décadas.",
+        "cta": "Solicita cotización de techo →",
+        "img": "/services/roofing-remodel.jpg"
+      },
+      {
+        "title": "Siding",
+        "desc": "Mejor presencia y aislamiento. Opciones de bajo mantenimiento que resisten el clima y el tiempo.",
+        "cta": "Solicita cotización de revestimiento →",
+        "img": "/services/siding-remodel.jpg"
+      },
+      {
+        "title": "Exterior Painting",
+        "desc": "Preparación profesional + pinturas premium = color duradero y protección para el exterior de tu hogar.",
+        "cta": "Solicita cotización de pintura →",
+        "img": "/services/exterior-painting.jpg"
+      }
+    ]
+  },
+  "WhyUs": {
+    "title": "¿Por qué elegirnos?",
+    "subtitle": "Equipos locales con licencia y asegurados. Precios y tiempos transparentes. Materiales premium, obras limpias y trato respetuoso.",
+    "features": [
+      {
+        "title": "Calidad artesanal",
+        "desc": "Instalado por especialistas con métodos y materiales comprobados."
+      },
+      {
+        "title": "Entrega puntual",
+        "desc": "Cronogramas confiables con actualizaciones durante todo el trabajo."
+      },
+      {
+        "title": "Enfoque en el cliente",
+        "desc": "Ajustamos el alcance y los acabados a tu estilo, necesidades y presupuesto."
+      },
+      {
+        "title": "Precios transparentes",
+        "desc": "Estimaciones detalladas por partidas. Sin cargos ocultos. Sin sorpresas."
+      }
+    ],
+    "stats": {
+      "years": {
+        "value": "10+",
+        "label": "Años de experiencia"
+      },
+      "projects": {
+        "value": "400+",
+        "label": "Proyectos completados"
+      },
+      "rating": {
+        "value": "4.5★",
+        "label": "Calificación promedio"
+      }
+    }
+  },
+  "Process": {
+    "title": "Nuestro proceso simplificado",
+    "subtitle": "Pasos claros para que tu proyecto fluya — desde la primera llamada hasta la inspección final.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Consulta",
+        "desc": "Visita virtual o en sitio. Escuchamos metas, estilo y presupuesto."
+      },
+      {
+        "n": "2",
+        "title": "Diseño y estimado",
+        "desc": "Opciones y acabados, cotización detallada por partidas y alternativas de financiamiento."
+      },
+      {
+        "n": "3",
+        "title": "Construcción e instalación",
+        "desc": "Profesionales con licencia, actualizaciones diarias, áreas de trabajo ordenadas y metas cumplidas."
+      },
+      {
+        "n": "4",
+        "title": "Revisión final",
+        "desc": "Repasamos cada detalle contigo. Registramos garantías. ¡A disfrutar!"
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Proyectos destacados",
+    "subtitle": "Transformaciones recientes para inspirar tu proyecto.",
+    "items": [
+      {
+        "title": "Cocina moderna — Condado de Bergen, NJ",
+        "caption": "Cocina moderna • Bergen, NJ",
+        "desc": "Reforma total: gabinetes shaker a medida, encimeras de cuarzo e iluminación bajo alacena.",
+        "slides": [
+          {
+            "image": "/projects/project-1/image02.jpg",
+            "alt": "Nueva cocina con gabinetes shaker blancos",
+            "caption": "Gabinetes e isla en blanco satinado."
+          },
+          {
+            "image": "/projects/project-1/image03.jpg",
+            "alt": "Encimeras de cuarzo y salpicadero de azulejo",
+            "caption": "Cuarzo Calacatta + salpicadero tipo subway."
+          },
+          {
+            "image": "/projects/project-1/image04.jpg",
+            "alt": "Pared de despensa y electrodomésticos",
+            "caption": "Despensa de piso a techo y refrigerador panelable."
+          },
+          {
+            "image": "/projects/project-1/image05.jpg",
+            "alt": "Pared de despensa y electrodomésticos",
+            "caption": "Despensa de piso a techo y refrigerador panelable."
+          },
+          {
+            "image": "/projects/project-1/image06.jpg",
+            "alt": "Pared de despensa y electrodomésticos",
+            "caption": "Despensa de piso a techo y refrigerador panelable."
+          },
+          {
+            "image": "/projects/project-1/image07.jpg",
+            "alt": "Pared de despensa y electrodomésticos",
+            "caption": "Despensa de piso a techo y refrigerador panelable."
+          },
+          {
+            "image": "/projects/project-1/image19.jpg",
+            "alt": "Pared de despensa y electrodomésticos",
+            "caption": "Despensa de piso a techo y refrigerador panelable."
+          }
+        ]
+      },
+      {
+        "title": "Baño de lujo — Stamford, CT",
+        "caption": "Baño de lujo • Stamford, CT",
+        "desc": "Ducha a ras de piso, porcelanato de gran formato y grifería negro mate.",
+        "slides": [
+          {
+            "image": "/projects/project-2/image10.jpg",
+            "alt": "Ducha sin borde",
+            "caption": "Ducha de umbral cero con desagüe lineal."
+          },
+          {
+            "image": "/projects/project-2/image24.jpg",
+            "alt": "Ducha sin borde",
+            "caption": "Ducha de umbral cero con desagüe lineal."
+          },
+          {
+            "image": "/projects/project-2/image13.jpg",
+            "alt": "Ducha sin borde",
+            "caption": "Ducha de umbral cero con desagüe lineal."
+          },
+          {
+            "image": "/projects/project-2/image14.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image15.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image16.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image17.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image18.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image20.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image21.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image22.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image23.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image25.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image26.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-2/image27.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          }
+        ]
+      },
+      {
+        "title": "Baño de lujo — Stamford, CT",
+        "caption": "Baño de lujo • Stamford, CT",
+        "desc": "Ducha a ras de piso, porcelanato de gran formato y grifería negro mate.",
+        "slides": [
+          {
+            "image": "/projects/project-3/image01.jpg",
+            "alt": "Ducha sin borde",
+            "caption": "Ducha de umbral cero con desagüe lineal."
+          },
+          {
+            "image": "/projects/project-3/image08.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-3/image09.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-3/image11.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-3/image12.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          }
+        ]
+      },
+      {
+        "title": "Baño de lujo — Stamford, CT",
+        "caption": "Baño de lujo • Stamford, CT",
+        "desc": "Ducha a ras de piso, porcelanato de gran formato y grifería negro mate.",
+        "slides": [
+          {
+            "image": "/projects/project-4/image02.jpg",
+            "alt": "Ducha sin borde",
+            "caption": "Ducha de umbral cero con desagüe lineal."
+          },
+          {
+            "image": "/projects/project-4/image03.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image06.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image07.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image08.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image09.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image11.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          },
+          {
+            "image": "/projects/project-4/image14.jpg",
+            "alt": "Vanidad doble",
+            "caption": "Vanidad flotante e iluminación integrada."
+          }
+        ]
+      }
+    ]
+  },
+  "Financing": {
+    "title": "Opciones de financiamiento disponibles",
+    "subtitle": "Haz realidad tu proyecto con financiamiento flexible. APR promocional disponible OAC.",
+    "cta": "{Common.cta.financing}"
+  },
+  "Reviews": {
+    "title": "Lo que opinan nuestros clientes",
+    "subtitle": "De confianza para propietarios en Nueva Jersey y Pensilvania.",
+    "list": [
+      {
+        "name": "Karen L.",
+        "location": "Paramus, NJ",
+        "quote": "Imperial Home Remodeling transformó por completo nuestra cocina anticuada. El equipo fue respetuoso, puntual y la calidad de los gabinetes es excelente. ¡Estamos encantados con el resultado!"
+      },
+      {
+        "name": "Michael R.",
+        "location": "Cherry Hill, NJ",
+        "quote": "El reemplazo del techo fue fluido de principio a fin. El equipo explicó cada paso, terminó a tiempo y dejó el patio impecable. Muy recomendables."
+      },
+      {
+        "name": "Angela P.",
+        "location": "Allentown, PA",
+        "quote": "Instalamos ventanas y puertas nuevas. La diferencia en confort y ahorro energético es notable. Instalación profesional y comunicación clara."
+      },
+      {
+        "name": "David S.",
+        "location": "Harrisburg, PA",
+        "quote": "Imperial remodeló nuestro baño principal en un verdadero spa. La instalación de azulejos y los accesorios son hermosos, y se ajustaron a nuestro presupuesto. No podríamos estar más felices."
+      },
+      {
+        "name": "Rebecca T.",
+        "location": "Wayne, NJ",
+        "quote": "La pintura exterior se hizo con una atención al detalle increíble. Usaron materiales de calidad y la casa luce como nueva. ¡Los vecinos no paran de elogiar!"
+      },
+      {
+        "name": "John M.",
+        "location": "Philadelphia, PA",
+        "quote": "El cambio de revestimiento renovó por completo la fachada. El equipo trabajó de forma eficiente, cuidó cada detalle y el aislamiento mejoró nuestras facturas."
+      }
+    ]
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes",
+    "categories": [
+      {
+        "name": "General",
+        "items": [
+          {
+            "q": "¿Qué áreas cubren?",
+            "a": "Atendemos todo Nueva Jersey y Pensilvania."
+          },
+          {
+            "q": "¿Cuentan con licencia y seguro?",
+            "a": "Sí. Tenemos licencia y seguro en NJ y PA y cumplimos con los códigos locales."
+          },
+          {
+            "q": "¿Gestionan permisos e inspecciones?",
+            "a": "Sí. Tramitamos los permisos necesarios, coordinamos inspecciones y te informamos en cada paso."
+          },
+          {
+            "q": "¿Cómo minimizan las molestias durante la obra?",
+            "a": "Protegemos áreas adyacentes, mantenemos el sitio ordenado y programamos el trabajo con actualizaciones regulares."
+          },
+          {
+            "q": "¿Ofrecen garantías?",
+            "a": "Sí. Ofrecemos garantías de fabricante y garantía de mano de obra."
+          }
+        ]
+      },
+      {
+        "name": "Cocinas",
+        "items": [
+          {
+            "q": "¿Ayudan con distribución y diseño?",
+            "a": "Claro. Planificamos distribuciones eficientes, gabinetes, almacenamiento, iluminación y materiales según tu estilo y presupuesto."
+          },
+          {
+            "q": "¿Instalan gabinetes y encimeras a medida?",
+            "a": "Sí. Ofrecemos gabinetes a medida y semi-medida, además de encimeras duraderas como cuarzo y granito."
+          },
+          {
+            "q": "¿Cuánto tarda una remodelación de cocina?",
+            "a": "La mayoría toma de 4 a 8 semanas según alcance, materiales y cambios estructurales."
+          },
+          {
+            "q": "¿Incluyen piso e iluminación en el proyecto?",
+            "a": "Sí. Podemos incluir pisos, iluminación empotrada, luces bajo alacena y cambio de luminarias."
+          }
+        ]
+      },
+      {
+        "name": "Baños",
+        "items": [
+          {
+            "q": "¿Remodelan baños pequeños?",
+            "a": "Sí. Optimizamos espacios compactos con distribuciones, almacenaje y accesorios inteligentes."
+          },
+          {
+            "q": "¿Construyen duchas a ras de piso o baños accesibles?",
+            "a": "Sí. Ofrecemos duchas sin umbral, barras de apoyo, bancas y puertas más anchas."
+          },
+          {
+            "q": "¿Cuánto tarda una remodelación de baño?",
+            "a": "Un baño completo suele tardar de 3 a 6 semanas. Renovaciones simples pueden ser más rápidas."
+          },
+          {
+            "q": "¿Se encargan de impermeabilización y ventilación?",
+            "a": "Sí. Aplicamos métodos adecuados y ventilación conforme a código para evitar humedad."
+          }
+        ]
+      },
+      {
+        "name": "Techos",
+        "items": [
+          {
+            "q": "¿Qué materiales instalan?",
+            "a": "Instalamos tejas asfálticas arquitectónicas, techos metálicos y más — seleccionados por durabilidad y clima local."
+          },
+          {
+            "q": "¿Cuánto tarda reemplazar un techo?",
+            "a": "La mayoría de techos residenciales se completan en 1–2 días, según el clima."
+          },
+          {
+            "q": "¿Retiran el techo viejo y gestionan residuos?",
+            "a": "Sí. Retiramos materiales, inspeccionamos el entablado y disponemos los residuos de forma responsable."
+          },
+          {
+            "q": "¿Evalúan ventilación y aislamiento del ático?",
+            "a": "Sí. Revisamos ventilación de entrada/salida y recomendamos mejoras de aislamiento."
+          }
+        ]
+      },
+      {
+        "name": "Ventanas y puertas",
+        "items": [
+          {
+            "q": "¿Instalan productos de alta eficiencia?",
+            "a": "Sí. Instalamos productos con certificación ENERGY STAR que reducen corrientes de aire y mejoran el confort."
+          },
+          {
+            "q": "¿Cuánto tarda el reemplazo de ventanas?",
+            "a": "Muchos proyectos se completan en 1–2 días; varía según cantidad y medidas especiales."
+          },
+          {
+            "q": "¿Retiran y desechan las unidades antiguas?",
+            "a": "Sí. Retiramos, disponemos las unidades existentes y dejamos el área limpia."
+          },
+          {
+            "q": "¿Pueden igualar el estilo de mis molduras?",
+            "a": "Sí. Ofrecemos opciones de molduras y acabados para integrar con tu hogar."
+          }
+        ]
+      },
+      {
+        "name": "Revestimiento",
+        "items": [
+          {
+            "q": "¿Qué opciones ofrecen?",
+            "a": "Vinilo, vinilo aislado y fibrocemento — cada uno con beneficios de estilo, durabilidad y mantenimiento."
+          },
+          {
+            "q": "¿Mejora la eficiencia energética?",
+            "a": "El revestimiento aislado reduce puentes térmicos y mejora el confort."
+          },
+          {
+            "q": "¿Instalan house wrap y tapajuntas?",
+            "a": "Sí. Seguimos buenas prácticas para manejo de humedad, tapajuntas y detalles de terminación."
+          },
+          {
+            "q": "¿Cuánto tarda un proyecto de revestimiento?",
+            "a": "La mayoría de viviendas se completan en ~una semana, según tamaño y detalles."
+          }
+        ]
+      },
+      {
+        "name": "Proceso y garantía",
+        "items": [
+          {
+            "q": "¿Cómo es su proceso?",
+            "a": "Consulta → diseño y estimado → construcción e instalación → revisión final. Recibirás actualizaciones y un cronograma claro."
+          },
+          {
+            "q": "¿Qué pasa si encuentran problemas ocultos?",
+            "a": "Documentamos hallazgos (p. ej., daños ocultos), explicamos opciones y avanzamos solo con tu aprobación."
+          },
+          {
+            "q": "¿Cómo mantienen el sitio limpio y seguro?",
+            "a": "Limpieza diaria, protecciones y manejo seguro de materiales. Respetamos tu hogar y tu horario."
+          },
+          {
+            "q": "¿Qué garantía ofrecen?",
+            "a": "Garantías del fabricante y garantía de mano de obra. Los detalles dependen del alcance y materiales."
+          }
+        ]
+      }
+    ]
+  },
+  "Areas": {
+    "title": "Áreas de servicio",
+    "subtitle": "Atendemos con orgullo a propietarios en todo Nueva Jersey y Pensilvania.",
+    "statesCombined": "NJ y PA",
+    "intro": "Cobertura en todo el estado con equipos locales. Los mismos estándares de calidad, sin importar tu código postal.",
+    "seoParagraphs": [
+      "Desde los suburbios del norte de Nueva Jersey hasta la Costa de Jersey, y desde la Main Line hasta Pittsburgh, nuestros equipos con licencia entregan remodelaciones duraderas y con diseño, con cronogramas claros y sitios de trabajo ordenados.",
+      "Ya sea una renovación completa de cocina, un baño moderno, nuevo techo, ventanas de alta eficiencia, revestimiento que resista los inviernos o pintura exterior, te cubrimos en ambos estados."
+    ],
+    "labels": {
+      "favoritesTitle": "Favoritos de los propietarios",
+      "focusTitle": "Lo que mejor hacemos",
+      "examplesTitle": "Lugares atendidos con frecuencia (ejemplos)",
+      "countiesTitle": "Cobertura por condado (no exhaustiva)",
+      "responseTime": "Tiempo de respuesta:",
+      "warranties": "Garantías:"
+    },
+    "cta": {
+      "checkAvailability": "Consultar disponibilidad",
+      "freeQuote": "Cotizar gratis",
+      "askAboutState": "Pregunta por {state}",
+      "chat": "Chatea con nosotros",
+      "startProject": "Comienza tu proyecto"
+    },
+    "aria": {
+      "askAboutArea": "Preguntar si atienden {area}"
+    },
+    "chatPrefill": "¡Hola! Estoy en {area}. ¿Atienden mi zona?",
+    "closing": {
+      "text": "Cubrimos todo {states}. Cuéntanos sobre tu hogar — estilo, tiempos y presupuesto — y propondremos el alcance correcto con un estimado detallado por partidas."
+    },
+    "states": [
+      {
+        "name": "Nueva Jersey",
+        "blurb": "Cobertura total en el norte, centro y sur de NJ con visitas rápidas y agenda ágil.",
+        "highlights": [
+          "Cocinas con gabinetes a medida",
+          "Opciones de renovación de baño en 1–2 semanas",
+          "Actualización de ventanas y puertas para ahorro energético"
+        ],
+        "servicesFocus": [
+          "Reemplazos de techos asfálticos",
+          "Revestimiento de fibrocemento y vinilo",
+          "Pintura exterior con recubrimientos premium"
+        ],
+        "examples": [
+          "Paramus",
+          "Hoboken",
+          "Jersey City",
+          "Princeton",
+          "Middletown",
+          "Cherry Hill"
+        ],
+        "counties": [
+          "Bergen",
+          "Essex",
+          "Hudson",
+          "Middlesex",
+          "Monmouth",
+          "Ocean",
+          "Camden",
+          "Union",
+          "Morris"
+        ],
+        "responseTime": "Por lo general dentro de 24–48 horas para estimados.",
+        "warranties": "Garantías de fabricante + mano de obra disponibles."
+      },
+      {
+        "name": "Pensilvania",
+        "blurb": "De Pittsburgh a Filadelfia y todo entre medio — equipos con experiencia e instalaciones limpias.",
+        "highlights": [
+          "Cocinas modernas y colocación de azulejos",
+          "Revestimiento aislado de bajo mantenimiento",
+          "Sistemas de techado de alto rendimiento"
+        ],
+        "servicesFocus": [
+          "Ventanas y puertas de alta eficiencia",
+          "Pintura exterior",
+          "Conversiones de baño"
+        ],
+        "examples": [
+          "Philadelphia",
+          "Bucks County",
+          "Montgomery County",
+          "Harrisburg",
+          "Lancaster",
+          "Pittsburgh"
+        ],
+        "counties": [
+          "Philadelphia",
+          "Bucks",
+          "Montgomery",
+          "Chester",
+          "Delaware",
+          "Allegheny",
+          "Dauphin",
+          "Lancaster"
+        ],
+        "responseTime": "Consultas normalmente en 2–3 días hábiles.",
+        "warranties": "Sólidas garantías del fabricante y nuestra garantía de mano de obra."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "¿Listo para empezar tu proyecto?",
+    "subtitle": "Obtén una cotización rápida y sin compromiso. Cuéntanos sobre tu espacio y tus objetivos — nosotros nos encargamos del resto.",
+    "details": {
+      "phoneLabel": "Teléfono",
+      "emailLabel": "Correo",
+      "addressLabel": "Dirección"
+    },
+    "form": {
+      "name": "Nombre completo *",
+      "phone": "Teléfono *",
+      "email": "Correo *",
+      "zip": "Código postal *",
+      "service": "Servicio de interés *",
+      "servicePlaceholder": "Selecciona un servicio",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Remodeling",
+        "Windows & Doors",
+        "Roofing",
+        "Siding",
+        "Exterior Painting"
+      ],
+      "message": "Detalles del proyecto *",
+      "consent": "Al enviar, aceptas ser contactado respecto a tu consulta.",
+      "submit": "Obtener mi cotización",
+      "success": "¡Gracias! Hemos recibido tu solicitud. Nos pondremos en contacto pronto.",
+      "submitting": "Enviando...",
+      "error": "Lo sentimos, algo salió mal. Intenta de nuevo."
+    }
+  },
+  "Footer": {
+    "aboutTitle": "{brandName}",
+    "aboutText": "Tu socio de confianza en remodelación y renovación del hogar.",
+    "quickLinks": "Enlaces rápidos",
+    "legal": "Legal",
+    "connect": "Conectar",
+    "links": {
+      "privacy": "Política de privacidad",
+      "terms": "Términos del servicio",
+      "testimonials": "Testimonios"
+    },
+    "copyright": "© {year} {brandName}. Todos los derechos reservados."
+  }
+}

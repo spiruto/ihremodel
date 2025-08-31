@@ -1,0 +1,734 @@
+{
+  "Common": {
+    "brand": "Imperial Home Remodeling",
+    "skipToContent": "Skip to content",
+    "cta": {
+      "primary": "Get a Free Quote",
+      "secondary": "View Our Work",
+      "consultation": "Get a Free Consultation",
+      "financing": "Explore Financing",
+      "startProject": "Start Your Project",
+      "getQuoteShort": "Get Quote",
+      "chat": "Chat With Us"
+    },
+    "aria": {
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "home": "Imperial Home Remodeling Home"
+    }
+  },
+  "Meta": {
+    "title": "Home Improvement & Remodeling | Kitchens, Baths, Roofing, Windows | Imperial Home Remodeling",
+    "description": "Licensed remodelers for kitchens, baths, roofing, windows & siding. Free quotes. Serving California, New York, New Jersey, Connecticut & Pennsylvania. Quality work, fast installs, great reviews.",
+    "ogTitle": "Imperial Home Remodeling — Expert Home Remodeling",
+    "ogDescription": "Kitchen & bath remodels, roofing, windows, siding. Free quotes. Serving NJ & PA."
+  },
+  "Header": {
+    "links": {
+      "services": "Services",
+      "whyUs": "Why Us",
+      "process": "Process",
+      "projects": "Projects",
+      "financing": "Financing",
+      "reviews": "Reviews",
+      "contact": "Contact"
+    },
+    "badgeRowTitle": "Trusted & Recommended",
+    "badges": [
+      "BBB A+",
+      "Angi Super Service",
+      "4.9★ Google",
+      "Licensed & Insured",
+      "Warranties"
+    ]
+  },
+  "Hero": {
+    "heading": "Transform Your Home with Confidence",
+    "subheading": "Kitchens & baths, roofing, windows & siding — quality craftsmanship and clear communication. Serving {states}.",
+    "states": "NJ & PA",
+    "ctaPrimary": "{ctaConsultation}",
+    "ctaSecondary": "{ctaSecondary}"
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "From concept to completion, we deliver durable, beautiful results homeowners love.",
+    "cards": [
+      {
+        "title": "Kitchen Remodeling",
+        "desc": "Custom cabinets, durable surfaces, efficient layouts — designed for everyday life and entertaining.",
+        "cta": "Get a Kitchen Quote →",
+        "img": "/services/kitchen-remodel.jpg"
+      },
+      {
+        "title": "Bathroom Remodeling",
+        "desc": "Spa-worthy showers, statement tile, and accessible layouts. One-day refresh options available.",
+        "cta": "Get a Bathroom Quote →",
+        "img": "/services/bathroom-remodel.jpg"
+      },
+      {
+        "title": "Windows & Doors",
+        "desc": "Energy-efficient replacements installed by experts. Warmer winters, cooler summers, lower bills.",
+        "cta": "Get a Windows Quote →",
+        "img": "/services/windows-and-doors-remodel.jpg"
+      },
+      {
+        "title": "Roofing",
+        "desc": "High-performance materials, clean installs, strong warranties — for decades of protection.",
+        "cta": "Get a Roofing Quote →",
+        "img": "/services/roofing-remodel.jpg"
+      },
+      {
+        "title": "Siding",
+        "desc": "Curb appeal + insulation. Low-maintenance options that stand up to weather and time.",
+        "cta": "Get a Siding Quote →",
+        "img": "/services/siding-remodel.jpg"
+      },
+      {
+        "title": "Exterior Painting",
+        "desc": "Pro prep + premium paints = lasting color and protection for your home’s exterior.",
+        "cta": "Get a Painting Quote →",
+        "img": "/services/exterior-painting.jpg"
+      }
+    ]
+  },
+  "WhyUs": {
+    "title": "Why Choose Us?",
+    "subtitle": "Licensed, insured, and local crews. Transparent pricing and timelines. Premium materials, clean job sites, and respectful teams.",
+    "features": [
+      {
+        "title": "Quality Craftsmanship",
+        "desc": "Installed by specialists using proven methods and materials."
+      },
+      {
+        "title": "On-Time Delivery",
+        "desc": "Schedules you can trust, with updates throughout the job."
+      },
+      {
+        "title": "Client-Focused",
+        "desc": "We tailor scope and finishes to your style, needs, and budget."
+      },
+      {
+        "title": "Transparent Pricing",
+        "desc": "Detailed, line-item estimates. No hidden fees. No surprises."
+      }
+    ],
+    "stats": {
+      "years": {
+        "value": "10+",
+        "label": "Years Experience"
+      },
+      "projects": {
+        "value": "400+",
+        "label": "Projects Completed"
+      },
+      "rating": {
+        "value": "4.5★",
+        "label": "Average Rating"
+      }
+    }
+  },
+  "Process": {
+    "title": "Our Streamlined Process",
+    "subtitle": "Clear steps so your project runs smoothly — from first call to final walkthrough.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Consultation",
+        "desc": "Free virtual or on-site visit. We listen to goals, style, and budget."
+      },
+      {
+        "n": "2",
+        "title": "Design & Estimate",
+        "desc": "Options and finishes, detailed line-item quote, and financing choices."
+      },
+      {
+        "n": "3",
+        "title": "Build & Install",
+        "desc": "Licensed pros, daily updates, tidy work sites, and milestones met."
+      },
+      {
+        "n": "4",
+        "title": "Final Walkthrough",
+        "desc": "We review every detail with you. Warranties registered. Enjoy!"
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "subtitle": "Recent transformations to inspire your own project.",
+    "items": [
+      {
+        "title": "Modern Kitchen — Bergen County, NJ",
+        "caption": "Modern Kitchen • Bergen, NJ",
+        "desc": "Full kitchen gut: custom shaker cabinets, quartz counters, under-cabinet lighting.",
+        "slides": [
+          {
+            "image": "/projects/project-1/image02.jpg",
+            "alt": "New kitchen with white shaker cabinets",
+            "caption": "Cabinets & island in satin white."
+          },
+          {
+            "image": "/projects/project-1/image03.jpg",
+            "alt": "Quartz countertops and tile backsplash",
+            "caption": "Calacatta quartz + subway backsplash."
+          },
+          {
+            "image": "/projects/project-1/image04.jpg",
+            "alt": "Pantry wall and appliances",
+            "caption": "Floor-to-ceiling pantry and panel-ready fridge."
+          },
+          {
+            "image": "/projects/project-1/image05.jpg",
+            "alt": "Pantry wall and appliances",
+            "caption": "Floor-to-ceiling pantry and panel-ready fridge."
+          },
+          {
+            "image": "/projects/project-1/image06.jpg",
+            "alt": "Pantry wall and appliances",
+            "caption": "Floor-to-ceiling pantry and panel-ready fridge."
+          },
+          {
+            "image": "/projects/project-1/image07.jpg",
+            "alt": "Pantry wall and appliances",
+            "caption": "Floor-to-ceiling pantry and panel-ready fridge."
+          },
+          {
+            "image": "/projects/project-1/image19.jpg",
+            "alt": "Pantry wall and appliances",
+            "caption": "Floor-to-ceiling pantry and panel-ready fridge."
+          }
+        ]
+      },
+      {
+        "title": "Luxury Bath — Stamford, CT",
+        "caption": "Luxury Bath • Stamford, CT",
+        "desc": "Curbless shower, large-format tile, matte-black fixtures.",
+        "slides": [
+          {
+            "image": "/projects/project-2/image10.jpg",
+            "alt": "Curbless walk-in shower",
+            "caption": "Zero-threshold shower with linear drain."
+          },
+          {
+            "image": "/projects/project-2/image24.jpg",
+            "alt": "Curbless walk-in shower",
+            "caption": "Zero-threshold shower with linear drain."
+          },
+          {
+            "image": "/projects/project-2/image13.jpg",
+            "alt": "Curbless walk-in shower",
+            "caption": "Zero-threshold shower with linear drain."
+          },
+          {
+            "image": "/projects/project-2/image14.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image15.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image16.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image17.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image18.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image20.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image21.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image22.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image23.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image25.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image26.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-2/image27.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          }
+        ]
+      },
+      {
+        "title": "Luxury Bath — Stamford, CT",
+        "caption": "Luxury Bath • Stamford, CT",
+        "desc": "Curbless shower, large-format tile, matte-black fixtures.",
+        "slides": [
+          {
+            "image": "/projects/project-3/image01.jpg",
+            "alt": "Curbless walk-in shower",
+            "caption": "Zero-threshold shower with linear drain."
+          },
+          {
+            "image": "/projects/project-3/image08.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-3/image09.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-3/image11.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-3/image12.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          }
+        ]
+      },
+      {
+        "title": "Luxury Bath — Stamford, CT",
+        "caption": "Luxury Bath • Stamford, CT",
+        "desc": "Curbless shower, large-format tile, matte-black fixtures.",
+        "slides": [
+          {
+            "image": "/projects/project-4/image02.jpg",
+            "alt": "Curbless walk-in shower",
+            "caption": "Zero-threshold shower with linear drain."
+          },
+          {
+            "image": "/projects/project-4/image03.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image06.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image07.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image08.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image09.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image11.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          },
+          {
+            "image": "/projects/project-4/image14.jpg",
+            "alt": "Vanity with double sink",
+            "caption": "Floating vanity and integrated lighting."
+          }
+        ]
+      }
+    ]
+  },
+  "Financing": {
+    "title": "Financing Options Available",
+    "subtitle": "Make your dream home a reality with flexible financing. Promotional APRs available OAC.",
+    "cta": "{Common.cta.financing}"
+  },
+  "Reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by homeowners across New Jersey & Pennsylvania.",
+    "list": [
+      {
+        "name": "Karen L.",
+        "location": "Paramus, NJ",
+        "quote": "Imperial Home Remodeling completely transformed our outdated kitchen. The crew was respectful, on time, and the quality of the cabinets is excellent. We’re thrilled with the final result!"
+      },
+      {
+        "name": "Michael R.",
+        "location": "Cherry Hill, NJ",
+        "quote": "Our roof replacement went smoothly from start to finish. The team explained every step, finished on schedule, and left our yard spotless. Highly recommend for peace of mind."
+      },
+      {
+        "name": "Angela P.",
+        "location": "Allentown, PA",
+        "quote": "We had all new windows and doors installed. The difference in comfort and energy savings is amazing. Professional installation and clear communication throughout."
+      },
+      {
+        "name": "David S.",
+        "location": "Harrisburg, PA",
+        "quote": "Imperial remodeled our master bathroom into a spa-like retreat. The tiling and fixtures are beautiful, and they worked within our budget. Couldn’t be happier."
+      },
+      {
+        "name": "Rebecca T.",
+        "location": "Wayne, NJ",
+        "quote": "Exterior painting was done with incredible attention to detail. The team used quality materials and the house looks brand new. Neighbors keep complimenting us!"
+      },
+      {
+        "name": "John M.",
+        "location": "Philadelphia, PA",
+        "quote": "Our siding replacement gave our home a completely fresh look. The crew worked efficiently, handled every detail, and the insulation upgrade has already lowered our energy bills."
+      }
+    ]
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "categories": [
+      {
+        "name": "General",
+        "items": [
+          {
+            "q": "What areas do you serve?",
+            "a": "We cover all of New Jersey and Pennsylvania."
+          },
+          {
+            "q": "Are you licensed and insured?",
+            "a": "Yes. We are fully licensed and insured in NJ & PA and comply with all local building codes."
+          },
+          {
+            "q": "Do you handle permits and inspections?",
+            "a": "Yes. We submit required permits, coordinate inspections, and keep you informed at every step."
+          },
+          {
+            "q": "How do you minimize disruption during the project?",
+            "a": "We protect adjacent areas, keep tidy job sites, and schedule work efficiently with regular updates."
+          },
+          {
+            "q": "Do you provide warranties?",
+            "a": "Yes. We offer manufacturer product warranties and workmanship warranties on labor."
+          }
+        ]
+      },
+      {
+        "name": "Kitchens",
+        "items": [
+          {
+            "q": "Can you help with kitchen layout and design?",
+            "a": "Absolutely. We plan efficient layouts, cabinetry, storage, lighting, and materials to match your style and budget."
+          },
+          {
+            "q": "Do you install custom cabinets and countertops?",
+            "a": "Yes. We offer custom and semi-custom cabinetry, plus durable countertop options like quartz and granite."
+          },
+          {
+            "q": "How long does a typical kitchen remodel take?",
+            "a": "Most kitchens take 4–8 weeks depending on scope, materials, and any structural changes."
+          },
+          {
+            "q": "Do you replace flooring and lighting as part of the project?",
+            "a": "Yes. We can include flooring, recessed lighting, under-cabinet lights, and fixture upgrades in your scope."
+          }
+        ]
+      },
+      {
+        "name": "Bathrooms",
+        "items": [
+          {
+            "q": "Do you remodel small bathrooms and powder rooms?",
+            "a": "Yes. We optimize compact spaces with smart layouts, storage, and fixture choices."
+          },
+          {
+            "q": "Can you build walk-in showers or accessible baths?",
+            "a": "Yes. We offer curbless showers, grab bars, bench seating, and wider doorways to improve accessibility."
+          },
+          {
+            "q": "How long does a bathroom remodel take?",
+            "a": "Typical full bath projects take 3–6 weeks. Simple refreshes can be faster."
+          },
+          {
+            "q": "Do you handle waterproofing and ventilation?",
+            "a": "Yes. We use proper waterproofing methods and ensure code-compliant ventilation to prevent moisture issues."
+          }
+        ]
+      },
+      {
+        "name": "Roofing",
+        "items": [
+          {
+            "q": "What roofing materials do you install?",
+            "a": "We install architectural asphalt shingles, metal roofing, and more—selected for durability and local climate."
+          },
+          {
+            "q": "How long does a roof replacement take?",
+            "a": "Most residential roofs are completed in 1–2 days, weather permitting."
+          },
+          {
+            "q": "Do you remove the old roof and handle disposal?",
+            "a": "Yes. We remove old materials, inspect decking, and haul away debris responsibly."
+          },
+          {
+            "q": "Can you assess ventilation and attic insulation?",
+            "a": "Yes. We review intake/exhaust ventilation and can advise on insulation improvements."
+          }
+        ]
+      },
+      {
+        "name": "Windows & Doors",
+        "items": [
+          {
+            "q": "Do you install energy-efficient windows and doors?",
+            "a": "Yes. We install ENERGY STAR–rated products that reduce drafts and improve comfort."
+          },
+          {
+            "q": "How long does window replacement take?",
+            "a": "Many projects are completed in 1–2 days; timelines vary by quantity and custom sizing."
+          },
+          {
+            "q": "Will you dispose of my old windows and doors?",
+            "a": "Yes. We remove and haul away existing units and clean the work area."
+          },
+          {
+            "q": "Can you match existing trim and style?",
+            "a": "Yes. We offer interior/exterior trim options and finishes to blend with your home."
+          }
+        ]
+      },
+      {
+        "name": "Siding",
+        "items": [
+          {
+            "q": "What siding options do you offer?",
+            "a": "Vinyl, insulated vinyl, and fiber cement—each with style, durability, and maintenance benefits."
+          },
+          {
+            "q": "Does new siding improve energy efficiency?",
+            "a": "Insulated siding can help reduce thermal bridging and improve comfort."
+          },
+          {
+            "q": "Do you install house wrap and flashing?",
+            "a": "Yes. We follow best practices for moisture management, flashing, and trim details."
+          },
+          {
+            "q": "How long does a siding project take?",
+            "a": "Most homes are completed in about a week, depending on size and details."
+          }
+        ]
+      },
+      {
+        "name": "Exterior Painting",
+        "items": [
+          {
+            "q": "How do you prepare surfaces before painting?",
+            "a": "We wash, scrape, sand, repair, and prime as needed to ensure adhesion and longevity."
+          },
+          {
+            "q": "What paints do you use?",
+            "a": "We use premium exterior coatings appropriate for local weather and substrate type."
+          },
+          {
+            "q": "How do you protect landscaping and fixtures?",
+            "a": "We cover landscaping, windows, and fixtures; and we clean up thoroughly each day."
+          },
+          {
+            "q": "When is the best season to paint exteriors?",
+            "a": "We plan around temperature and humidity to hit manufacturer-recommended application conditions."
+          }
+        ]
+      },
+      {
+        "name": "Process & Warranty",
+        "items": [
+          {
+            "q": "What does your process look like?",
+            "a": "Consultation → design & estimate → build & install → final walkthrough. You’ll get regular updates and a clear timeline."
+          },
+          {
+            "q": "How do you handle unexpected issues found during work?",
+            "a": "We document findings (e.g., hidden damage), explain options, and proceed only with your approval."
+          },
+          {
+            "q": "How do you keep the job site clean and safe?",
+            "a": "Daily cleanup, protective coverings, and safe material staging. We respect your home and schedule."
+          },
+          {
+            "q": "What kind of warranty do you provide?",
+            "a": "Manufacturer warranties on products plus our workmanship warranty on labor. Details vary by scope and materials."
+          }
+        ]
+      }
+    ]
+  },
+  "Areas": {
+    "title": "Service Areas",
+    "subtitle": "We proudly serve homeowners across New Jersey and Pennsylvania.",
+    "statesCombined": "NJ & PA",
+    "intro": "State-wide coverage with local crews. Same quality standards, no matter your ZIP.",
+    "seoParagraphs": [
+      "From North Jersey suburbs to the Jersey Shore, and from the Main Line to Pittsburgh, our licensed teams deliver durable, design-forward remodeling with clear timelines and tidy job sites.",
+      "Whether you need a full kitchen overhaul, a modern bath, new roofing, energy-efficient windows, siding that stands up to winters, or exterior painting, we’ve got you covered across both states."
+    ],
+    "labels": {
+      "favoritesTitle": "Homeowner favorites",
+      "focusTitle": "What we’re best known for",
+      "examplesTitle": "Frequently served places (examples)",
+      "countiesTitle": "County-wide coverage (not exhaustive)",
+      "responseTime": "Response time:",
+      "warranties": "Warranties:"
+    },
+    "cta": {
+      "checkAvailability": "Check availability",
+      "freeQuote": "Get a Free Quote",
+      "askAboutState": "Ask about {state}",
+      "chat": "Chat with us",
+      "startProject": "Start Your Project"
+    },
+    "aria": {
+      "askAboutArea": "Ask if you serve {area}"
+    },
+    "chatPrefill": "Hi! I’m in {area}. Do you serve my area?",
+    "closing": {
+      "text": "We cover all of {states}. Tell us about your home—style, timeline, and budget—and we’ll propose the right scope with a detailed, line-item estimate."
+    },
+    "states": [
+      {
+        "name": "New Jersey",
+        "blurb": "Full coverage across North, Central, and South Jersey with quick site visits and fast scheduling.",
+        "highlights": [
+          "Kitchen remodels with custom cabinetry",
+          "One-to-two week bath refresh options",
+          "Window & door upgrades for energy savings"
+        ],
+        "servicesFocus": [
+          "Asphalt roofing replacements",
+          "Fiber-cement & vinyl siding",
+          "Exterior painting with premium coatings"
+        ],
+        "examples": [
+          "Paramus",
+          "Hoboken",
+          "Jersey City",
+          "Princeton",
+          "Middletown",
+          "Cherry Hill"
+        ],
+        "counties": [
+          "Bergen",
+          "Essex",
+          "Hudson",
+          "Middlesex",
+          "Monmouth",
+          "Ocean",
+          "Camden",
+          "Union",
+          "Morris"
+        ],
+        "responseTime": "Usually within 24–48 hours for estimates.",
+        "warranties": "Manufacturer + workmanship warranties available."
+      },
+      {
+        "name": "Pennsylvania",
+        "blurb": "Pittsburgh to Philadelphia and everywhere between—experienced crews and clean installs.",
+        "highlights": [
+          "Modern kitchens & tiling",
+          "Low-maintenance, insulated siding",
+          "High-performance roofing systems"
+        ],
+        "servicesFocus": [
+          "Energy-efficient windows & doors",
+          "Exterior painting",
+          "Bath conversions"
+        ],
+        "examples": [
+          "Philadelphia",
+          "Bucks County",
+          "Montgomery County",
+          "Harrisburg",
+          "Lancaster",
+          "Pittsburgh"
+        ],
+        "counties": [
+          "Philadelphia",
+          "Bucks",
+          "Montgomery",
+          "Chester",
+          "Delaware",
+          "Allegheny",
+          "Dauphin",
+          "Lancaster"
+        ],
+        "responseTime": "Consultations typically scheduled within 2–3 business days.",
+        "warranties": "Strong manufacturer coverage plus our workmanship guarantee."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Get a fast, no-obligation quote. Tell us about your space and goals — we’ll take it from there.",
+    "details": {
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address"
+    },
+    "form": {
+      "name": "Full Name *",
+      "phone": "Phone *",
+      "email": "Email *",
+      "zip": "ZIP Code *",
+      "service": "Service Interested In *",
+      "servicePlaceholder": "Select a service",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Remodeling",
+        "Windows & Doors",
+        "Roofing",
+        "Siding",
+        "Exterior Painting"
+      ],
+      "message": "Project Details *",
+      "consent": "By submitting, you agree to be contacted about your inquiry.",
+      "submit": "Get My Free Quote",
+      "success": "Thanks! Your request has been received. We will contact you shortly.",
+      "submitting": "Sending...",
+      "error": "Sorry—something went wrong. Please try again."
+    }
+  },
+  "Footer": {
+    "aboutTitle": "{brandName}",
+    "aboutText": "Your trusted partner in home remodeling and renovation.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "connect": "Connect",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "testimonials": "Testimonials"
+    },
+    "copyright": "© {year} {brandName}. All rights reserved."
+  }
+}

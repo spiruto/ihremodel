@@ -1,94 +1,126 @@
-import { Contact } from "@/components/contact/helpers";
-import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
+import { contactSchema, type ContactPayload } from '@/lib/schemas/contact';
+import { renderContactEmail } from '@/lib/mail/renderContactEmail';
+import { renderContactEmailText } from '@/lib/mail/renderContactEmailText';
+import { renderCustomerConfirmEmail } from '@/lib/mail/rendercustomerConfirmEmail';
+import { renderCustomerConfirmEmailText } from '@/lib/mail/renderCustomerConfirmText';
+
+// (Optional) lightweight in-memory rate limit for dev (resets on deploy)
+const buckets = new Map<string, { hits: number; ts: number }>();
+const WINDOW_MS = 60_000; // 1 minute
+const MAX_HITS = 10;
+
+function rateLimit(ip: string) {
+  const now = Date.now();
+  const b = buckets.get(ip) ?? { hits: 0, ts: now };
+  if (now - b.ts > WINDOW_MS) {
+    buckets.set(ip, { hits: 1, ts: now });
+    return false;
+  }
+  b.hits += 1;
+  buckets.set(ip, b);
+  return b.hits > MAX_HITS;
+}
 
 export async function POST(req: Request) {
-  const body: Contact = await req.json();
-  const { fullName, email, message, workType, phone } = body;
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+    (req as unknown as { ip?: string }).ip ||
+    'unknown';
 
-  if (!fullName || !email || !workType) {
-    return NextResponse.json({ error: "Missing fields" }, { status: 400 });
+  if (rateLimit(ip)) {
+    return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
   }
 
+  if (!req.headers.get('content-type')?.includes('application/json')) {
+    return NextResponse.json({ error: 'Invalid content type' }, { status: 400 });
+  }
+
+  let json: unknown;
+  try {
+    json = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
+  }
+
+  const parse = contactSchema.safeParse(json);
+  if (!parse.success) {
+    const flat = parse.error.flatten();
+    return NextResponse.json({ error: 'Validation failed', details: flat.fieldErrors }, { status: 422 });
+  }
+
+  const { fullName, email, message, workType, phone, zip } = parse.data as ContactPayload;
+
   const transporter = nodemailer.createTransport({
-    host: "smtpout.secureserver.net",
+    host: 'smtpout.secureserver.net',
     port: 465,
-    secure: true, // true for port 465, false for 587
+    secure: true,
     auth: {
       user: process.env.NEXT_PUBLIC_MAIL_USER as string,
-      pass: process.env.NEXT_PUBLIC_MAIL_PASS as string,
-    },
+      pass: process.env.NEXT_PUBLIC_MAIL_PASS as string
+    }
   });
 
+  const submittedAt = new Date().toLocaleString();
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ihremodel.com';
+  const brand = 'Imperial Home Remodeling';
+
   try {
+    // 1) Send internal notification to your team
     await transporter.sendMail({
       from: `"${fullName}" <${email}>`,
       to: process.env.NEXT_PUBLIC_MAIL_USER as string,
-      // cc: "danicrqa@gmail.com",
       subject: `${fullName} wants a quote for '${workType}'`,
-      text: message,
-      html: `
-      <div style="max-width: 600px; margin: auto; font-family: 'Arial', sans-serif; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
-        <div style="background-color: #000; padding: 20px; text-align: center;">
-          <h1 style="color: #d4af37; margin: 0; font-size: 24px;">New Quote Request</h1>
-        </div>
+      html: renderContactEmail({
+        fullName,
+        email,
+        phone,
+        zip,
+        workType,
+        message,
+        submittedAt,
+        brand,
+      }),
+      text: renderContactEmailText({
+        fullName,
+        email,
+        phone,
+        zip,
+        workType,
+        message,
+        submittedAt,
+        brand
+      })
+    });
 
-        <div style="padding: 24px;">
-          <table style="width: 100%; border-collapse: collapse; color: #333;">
-            <tr>
-              <td style="padding: 8px; font-weight: bold; color: #000;">Full Name:</td>
-              <td style="padding: 8px;">${fullName}</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; font-weight: bold; color: #000;">Email:</td>
-              <td style="padding: 8px;">${email}</td>
-            </tr>
-
-            ${
-              phone
-                ? `
-            <tr>
-              <td style="padding: 8px; font-weight: bold; color: #000;">Phone:</td>
-              <td style="padding: 8px;">  <a href="tel:${phone
-                .trim()
-                .replaceAll("-", "")
-                .replaceAll(" ", "")}">${phone}</a></td>
-            </tr>`
-                : ""
-            }
-            <tr>
-              <td style="padding: 8px; font-weight: bold; color: #000;">Work Type:</td>
-              <td style="padding: 8px;">${workType}</td>
-            </tr>
-            ${
-              message
-                ? `
-            <tr>
-              <td style="padding: 8px; font-weight: bold; color: #000;">Message:</td>
-              <td style="padding: 8px; white-space: pre-line;">${message}</td>
-            </tr>`
-                : ""
-            }
-          </table>
-
-          <p style="font-size: 12px; color: #999; margin-top: 24px;">
-            This request was submitted via the Imperial Home Remodeling website.
-          </p>
-        </div>
-
-        <div style="background-color: #000; text-align: center; padding: 12px;">
-          <p style="color: #d4af37; font-size: 12px; margin: 0;">© ${new Date().getFullYear()} Imperial Home Remodeling</p>
-        </div>
-      </div>
-    `,
+    // 2) Send confirmation to the customer
+    await transporter.sendMail({
+      from: `"${brand}" <${process.env.NEXT_PUBLIC_MAIL_USER as string}>`,
+      to: email,
+      replyTo: process.env.NEXT_PUBLIC_MAIL_USER as string,
+      subject: `We received your request — ${brand}`,
+      html: renderCustomerConfirmEmail({
+        fullName,
+        email,
+        phone,
+        workType,
+        submittedAt,
+        brand,
+        siteUrl
+      }),
+      text: renderCustomerConfirmEmailText({
+        fullName,
+        phone,
+        workType,
+        submittedAt,
+        brand,
+        siteUrl
+      })
     });
 
     return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json(
-      { error: "Email failed to send" },
-      { status: 500 }
-    );
+  } catch (err) {
+    console.error('Mail error:', err);
+    return NextResponse.json({ error: 'Email failed to send' }, { status: 500 });
   }
 }

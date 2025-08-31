@@ -1,5 +1,46 @@
+/* Tailwind base (v4+) */
 @import "tailwindcss";
 
-body {
-  font-family: "Poppins", sans-serif;
+:root{
+  /* Brand palette */
+  --brand-char:#393e41;   /* charcoal */
+  --brand-cloud:#d3d0cb;  /* light gray */
+  --brand-gold:#e2c044;   /* gold (primary CTA) */
+  --brand-teal:#587b7f;   /* teal-slate (secondary) */
+  --brand-ink:#1e2019;    /* deep ink (text / dark) */
 }
+
+html{ scroll-behavior:smooth; }
+body{ @apply bg-[var(--brand-cloud)] text-[var(--brand-ink)]; }
+h1,h2,h3,h4,h5,h6{ font-family: var(--font-montserrat), ui-sans-serif, system-ui; }
+
+.btn{ @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-base italic font-bold transition-all duration-300; }
+.btn-primary{ background:var(--brand-gold); color:var(--brand-char); }
+.btn-primary:hover{ filter:brightness(0.95); }
+.btn-secondary{ background:white; color:var(--brand-teal); border:2px solid var(--brand-teal); }
+.btn-secondary:hover{ background:color-mix(in srgb, var(--brand-teal) 8%, white); }
+
+.section-padding{ @apply px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24; }
+.skip-link{ @apply sr-only focus:not-sr-only fixed top-2 left-2 z-[100] bg-[var(--brand-ink)] text-white px-3 py-2 rounded; }
+.header-blur{ backdrop-filter:saturate(180%) blur(10px); }
+
+.input{ @apply mt-1 block w-full rounded-md border-[var(--brand-char)]/20 shadow-sm focus:border-[var(--brand-teal)] focus:ring-[var(--brand-teal)]; }
+.checkbox{ @apply rounded border-[var(--brand-char)]/30 text-[var(--brand-teal)] focus:ring-[var(--brand-teal)]; }
+
+[data-bg] { content-visibility:auto; }
+
+.container { @apply w-full max-w-7xl mx-auto; }
+
+@layer utilities {
+  @keyframes locale-fade-up {
+    from { opacity: 0; transform: translateY(8px) scale(0.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-localeFadeUp {
+    animation: locale-fade-up 140ms ease-out forwards;
+  }
+}
+
+/* Respect reduced motion automatically via the class above: Tailwind’s
+   `motion-safe:` variant (used in the component) disables animation when
+   user prefers reduced motion. */
