@@ -14,15 +14,11 @@ export default function FAQ() {
 
   // Backward compatible data: support either FAQ.categories[] or FAQ.items[]
   const categories = tr<Category[] | undefined>('categories');
-  const flatItems = tr<QA[] | undefined>('items');
 
   const data: Category[] = useMemo(() => {
     if (Array.isArray(categories) && categories.length) return categories;
-    if (Array.isArray(flatItems) && flatItems.length) {
-      return [{ name: 'General', items: flatItems }]; // fallback grouping
-    }
     return [];
-  }, [categories, flatItems]);
+  }, [categories]);
 
   const [query, setQuery] = useState('');
   const listRef = useRef<HTMLDivElement>(null);
